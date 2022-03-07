@@ -1,7 +1,7 @@
 #include<stdio.h>
-
-int main(){  
-int a[2][2],b[2][2],mul[2][2],r,c,i,j,k;    
+int main()
+{  
+int a[2][2],b[2][2],mul[2][2],r,c,i,j,k,sum[2][2];    
 system("cls");  
 printf("enter the number of row=");    
 scanf("%d",&r);    
@@ -32,7 +32,8 @@ for(j=0;j<c;j++)
 mul[i][j]=0;    
 for(k=0;k<c;k++)    
 {    
-mul[i][j]+=a[i][k]*b[k][j];    
+mul[i][j]+=a[i][k]*b[k][j]; 
+sum[i][j]=a[i][j]+b[i][j];
 }    
 }    
 }    
@@ -42,6 +43,15 @@ for(i=0;i<r;i++)
 for(j=0;j<c;j++)    
 {    
 printf("%d\t",mul[i][j]);    
+}    
+printf("\n"); 
+}   
+printf("The sum of the two matrix is \n");
+for(i=0;i<r;i++)    
+{    
+for(j=0;j<c;j++)    
+{    
+printf("%d\t",sum[i][j]);    
 }    
 printf("\n");    
 }    
