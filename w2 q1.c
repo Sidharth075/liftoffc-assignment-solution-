@@ -11,7 +11,7 @@ int i,j,count=0;
 char ch[10];
 strcat(str1,str2);
 char rev[1000];
-printf("STRING : %s",strcat(str1,str2));
+printf("STRING : %s",str1);
 while(str1[count]!='\0'){
     count++ ;
 }
