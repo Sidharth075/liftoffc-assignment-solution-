@@ -12,10 +12,10 @@ return Prime(i+1,n);
 }
 int main()
 { 
-int n ;
+int num ;
  printf("Enter the Number:"); 
-scanf("%d",&n );
-if(Prime(2,n)==0)
+scanf("%d",&num );
+if(Prime(2,num)==0)
  printf("It's a Prime Number.");
  else
  printf("It's not a Prime Number.");
