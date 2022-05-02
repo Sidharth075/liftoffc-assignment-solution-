@@ -5,7 +5,7 @@ int  gcd(int c, int d)
     if (d != 0)
         return gcd(d, c % d);
     else
-        return n1;
+        return c;
 }
 
 int main() 
